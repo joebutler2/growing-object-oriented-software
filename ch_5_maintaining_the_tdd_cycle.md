@@ -46,4 +46,30 @@ Focus on the error messages:
  - validates our assumptions about the code
  - you should focus on making the intentions explicit so that the system is more maintainable
 
- 
+## Develop from the inputs to the outputs
+
+We work from the UI to the internal objects, to the domain and possibly with external components.
+
+It's tempting to start with the domain models and then hook it into the rest of the system but that typically leads to integration challenges.
+
+## Unit test behavior not methods
+
+High test coverage doesn't mean the codebase will be easy to work with. Tests that focus purely on methods can lead to tests that describe what the code does but not what's it's for.
+
+Focus on the features that the subject should support. The tests should describe how to leverage the class for a use case. Focusing on code coverage is an anti-goal.
+
+Story time: - Nat revisited a project that focused on testing individual methods and realized that the code was hard to understand. It wasn't clear how each object was supposed to behave, what the responsibilities were, and how the different methods of objects work together.
+
+## Listen to the tests
+
+If a test is difficult to write then that typically means the design of the object under test should be improved.
+
+> It's time to bust out the refactor tractor
+
+The alternative way to response is to leave the design as is, which will eventually lead to "software rot".
+
+## Tuning the cycle
+
+Need a balance of the granularity of the tests. Too coarse and the number of permutations will cause the test suite to explode in execution time.
+
+Too fine grain will cause problems when you attempt to integrate objects.
