@@ -30,7 +30,7 @@ For later tests we should "write the test you want to read." (more on page 42).
 
 You'll be surprised by how long it might take to get even a skeleton to production since it requires coordinating with different individuals and groups.
 
-Note that there is an additional challenge of the team learning the social norms of working together.
+Note that there is an additional challenge of the team learning the social norms of working together. (Storming. Norming. Performing.)
 
 Incremental development can be stressful for people since it moves the stress of a project to earlier in the life span. In traditional software approaches this stress is at the end due to all of the teams integrating their work and squashing bugs.
 
